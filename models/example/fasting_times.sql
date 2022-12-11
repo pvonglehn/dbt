@@ -37,6 +37,6 @@ with
         order by full_date desc, time desc
     )
 
-select full_date, time as breakfast_time, hours_since_eating as fasting_time
+select full_date, time as breakfast_time, hours_since_eating as fasting_time_hours
 from fasting_times
 where rank_time_since_eating = 1
